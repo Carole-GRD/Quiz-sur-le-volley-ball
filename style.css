@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Charis+SIL&display=swap");
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-beige:#BF9E75;
+  --color-beige-t:#bf9e75dc;
+  --color-dark-grey: #262626;
+  --color-medium-grey: #a6a5a4;
+  --color-light-grey: #a6a5a480;
+  --color-off-white:#F2F2F2;
+}
+
+body {
+  background-color: var(--color-beige-t);
+  color: var(--color-dark-grey);
+  font-family: "Charis SIL", serif;
+  letter-spacing: 1px;
+}
+
+.custom {
+  background-color: var(--color-off-white);
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 0 5px 10px var(--color-medium-grey);
+  border-radius: 10px;
+}
+
+button {
+  margin: 50px 5px 20px;
+  padding: 10px 35px;
+  font-family: "Charis SIL", serif;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--color-light-grey);
+}
+
+.home h1 {
+  color: var(--color-beige);
+  letter-spacing: 1.5px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--color-light-grey);
+}
+.home p {
+  padding: 25px 0 40px;
+  font-size: 1.2rem;
+}
+.home img {
+  display: block;
+  margin: auto;
+  box-shadow: 0 0 5px 10px var(--color-medium-grey);
+  border-radius: 5px;
+}
+
+.quiz h2 {
+  color: var(--color-beige);
+  letter-spacing: 1.5px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--color-light-grey);
+}
+.quiz p {
+  text-align: left;
+  padding: 30px 0 30px 20px;
+  font-size: 1.2rem;
+}
+.quiz .propositions {
+  overflow: hidden;
+}
+.quiz .propositions p {
+  padding: 15px 0 15px 40px;
+  font-size: 1rem;
+  background-color: var(--color-light-grey);
+  margin: 15px 0;
+  border-radius: 5px;
+}
+.quiz .propositions .correct {
+  color: var(--color-off-white);
+  font-size: 1.3rem;
+  background-color: rgba(0, 128, 0, 0.7019607843);
+  animation: slideInLeft ease 0.3s forwards;
+}
+.quiz .propositions .wrong {
+  color: var(--color-off-white);
+  background-color: rgba(186, 0, 0, 0.7019607843);
+  animation: slideInLeft ease 0.3s forwards;
+}
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.quiz button {
+  margin: 30px 5px 20px;
+}
+
+.result h2 {
+  color: var(--color-beige);
+  padding-bottom: 10px;
+  letter-spacing: 1.5px;
+  border-bottom: 1px solid var(--color-light-grey);
+}
+.result section {
+  padding: 30px 0 0;
+  font-size: 1.2rem;
+}
+.result p {
+  padding: 10px 0;
+}
+.result button {
+  margin: 40px 5px 20px;
+}
+
+@media screen and (max-width: 400px) {
+  .custom {
+    max-width: 80vw;
+  }
+  img {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .custom {
+    max-width: 80vw;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
