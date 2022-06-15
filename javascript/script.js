@@ -148,6 +148,9 @@ function nextQuestion(){
                     }
                     scoreRepWrong++;
                 }
+                for (let i = 0; i < 4; i++){
+                    propQuestions.children[i].style.pointerEvents = 'none';
+                }
             }
         }
 
