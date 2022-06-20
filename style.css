@@ -27,7 +27,7 @@ body {
   margin: 50px auto;
   padding: 30px;
   text-align: center;
-  box-shadow: 0 0 5px 10px var(--color-medium-grey);
+  box-shadow: 0 0 5px 5px var(--color-medium-grey);
   border-radius: 10px;
 }
 
@@ -49,14 +49,17 @@ button {
   border-bottom: 1px solid var(--color-light-grey);
 }
 .home p {
+  display: inline-block;
+  width: 65%;
   padding: 25px 0 40px;
   font-size: 1.2rem;
 }
 .home img {
   display: block;
   margin: auto;
-  box-shadow: 0 0 5px 10px var(--color-medium-grey);
+  box-shadow: 10px 10px 10px 3px var(--color-medium-grey);
   border-radius: 5px;
+  width: 70%;
 }
 
 .quiz h2 {
@@ -80,9 +83,20 @@ button {
   margin: 15px 0;
   border-radius: 5px;
 }
+.quiz .propositions p:hover {
+  animation: survolProposition 0.2s forwards;
+}
+@keyframes survolProposition {
+  0% {
+    background-color: var(--color-light-grey);
+  }
+  100% {
+    background-color: var(--color-beige-t);
+  }
+}
 .quiz .propositions .correct {
   color: var(--color-off-white);
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   background-color: rgba(0, 128, 0, 0.7019607843);
   animation: slideInLeft ease 0.3s forwards;
 }
@@ -124,13 +138,16 @@ button {
   .custom {
     max-width: 80vw;
   }
-  img {
-    width: 95%;
+  .home p {
+    width: 100%;
   }
 }
 @media screen and (max-width: 800px) {
   .custom {
     max-width: 80vw;
+  }
+  .home p {
+    width: 90%;
   }
 }
 
