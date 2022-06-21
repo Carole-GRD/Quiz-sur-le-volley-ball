@@ -138,6 +138,7 @@ function nextQuestion(){
                 }
                 // si FAUX (rouge)  +  montrer la bonne réponse (vert)
                 else {
+                    nextOption.classList.add('beforeWrong');
                     nextOption.classList.add('wrong');
                     // montrer la réponse correcte (vert)
                     for (let i = 0; i < 4; i++){
@@ -148,6 +149,7 @@ function nextQuestion(){
                     }
                     scoreRepWrong++;
                 }
+                // retirer le pointer pour que l'utilisateur ne puisse pas choisir une autre réponse
                 for (let i = 0; i < 4; i++){
                     propQuestions.children[i].style.pointerEvents = 'none';
                 }
